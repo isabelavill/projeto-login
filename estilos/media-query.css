@@ -15,6 +15,7 @@ grandes: mais de 1200px;
     }
     section#login {
         width:90vw;
+        height: 280px;
     }
     section#login > div#imagem{
         float:left; /*tirando a img de cima e botando do lado*/
@@ -33,6 +34,7 @@ grandes: mais de 1200px;
     }
     section#login {
         width:900px;
+        height: 350px;
     }
     section#login > div#imagem{
         float:left; /*tirando a img de cima e botando do lado*/

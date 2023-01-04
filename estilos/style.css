@@ -26,7 +26,7 @@ section#login{
     position:absolute;/*centralizando*/
     top:50%;
     left:50%;
-    transform:translate(-50%,-50%);/*centralizando*/
+    
     background-color:white;
     width:250px;
     height:550px;
@@ -36,6 +36,7 @@ section#login{
 
     transition: width .3s,height .3s; /*transicao entre as media queries*/
     transition-timing-function: ease; /*suaviza a transicao*/
+    transform:translate(-50%,-50%);/*centralizando*/
 }
 section#login > div#imagem{
     display:block;
@@ -54,14 +55,37 @@ form > div.campo{
     width: 100%;
     display:block;
     height:40px;
-    border-radius:5px;
+    border-radius:8px;
     margin: 5px 0px;
+    border:2px solid #5f2c82;
 }
 
 div.campo > label{
     display: none;
 }
 
+div.campo > span{
+    color:white;
+    /**background-color: black;**/
+    font-size: 2em;
+    width:40px;
+    padding:5px;
+}
+
+div.campo > input{
+    background-color: #c0f3f1;
+    font-size: 1em;
+    width: calc(100%-44px);
+    height: 100%;
+    border: 0px;
+    border-radius:8px;
+    transform: translateY(-13px);
+    
+}
+
+div.campo > input:focus-within{ /**quando eu estiver digitando**/
+    background-color: white;
+}
 form > input[type=submit] {
     display: block;
     font-size: 1em;
